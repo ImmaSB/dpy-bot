@@ -10,6 +10,7 @@ import requests
 bot = commands.Bot(command_prefix=commands.when_mentioned_or("_"), intents=discord.Intents.all())
 bot.remove_command("help")
 buttons = ButtonsClient(bot)
+
 @bot.event
 async def on_ready():
   print("Chad's Ready To Go Bitch!")
